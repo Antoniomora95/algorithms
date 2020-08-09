@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container container-grid">
+        <input type="text" id="total" class="total" value="0">
+        <input type="text" id="actualValue" class="total" value="0">
+        <button class="number" >
+            AC
+        </button>
+        <button class="number">
+            Fill space
+        </button>
+        <button class="number">
+            %
+        </button>
+        <!--OTHER COLOR-->
+        <button class="number right" onclick="triggerOperation('divide')">
+           A/B
+        </button>
+        <button class="number" onclick="setInputActualValue(1)">
+            1
+        </button>
+        <button class="number" onclick="setInputActualValue(2)">
+            2
+        </button>
+        <button class="number" onclick="setInputActualValue(3)">
+            3
+        </button>
+        <!--OTHER COLOR-->
+        <button class="number right" onclick="triggerOperation('multiply')">
+            X
+         </button>
+        <button class="number" onclick="setInputActualValue(4)">
+            4
+        </button>
+        <button class="number" onclick="setInputActualValue(5)">
+            5
+        </button>
+        <button class="number" onclick="setInputActualValue(6)">
+            6
+        </button>
+        <!--OTHER COLOR-->
+        <button class="number right" onclick="triggerOperation('rest')">
+            -
+         </button>
+        <button class="number" onclick="setInputActualValue(7)">
+            7
+        </button>
+        <button class="number" onclick="setInputActualValue(8)">
+            8
+        </button>
+        <button class="number" onclick="setInputActualValue(9)">
+            9
+        </button>
+         <!--OTHER COLOR-->
+         <button class="number right" onclick="triggerOperation('sum')">
+            +
+         </button>
+         <button class="number zero" onclick="setInputActualValue(0)">
+            0
+        </button>
+        <button class="number">
+            .
+        </button>
+        <!--OTHER COLOR-->
+        <button class="number right" onclick="triggerOperation('equal')">
+            =
+         </button>
+    </div>
+    <script src="./calculator.js"></script>
+</body>
+</html>

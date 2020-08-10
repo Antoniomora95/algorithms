@@ -1,0 +1,38 @@
+/*
+for this algorthim you will nedd:
+
+1.- A form where you can add:
+    - the type of operation, it will be a select with 3 options (transfer. deposit, withdraw)
+    - the amount of the operation.
+    - if the operation is a transfer, then: we will need the origin and the destiny of the operation, otherwise only the account to perform the operation
+    so the result of the above info would be an object with a structure like this:
+    [
+        {
+            operation: 'transfer',
+            amount: 40,
+            origin: 'the value -1, we are working with an array' --->  2,
+            destiny: 3
+        }
+    ]
+2.- then the above object is inserted in an array of current pending operations.
+3.- We can render a list of pending operartions.
+4.- Repeat the above process or run/execute the operations in the qeue button [PROCESS]
+5.- function with a switch case for the 3 options [transfer, deposit, withdraw].
+    if the costumer chose [transfer]:
+        call a function that will do this:
+            parameters:
+                current balance array --> [12, 45, 45, 65]
+                object with the amount, origin and destiny.
+            check if the origin and destiny are valid indexes in the array
+                if yes continue with the next step.
+                if not return a error message saying that we do not indentify the origin and/or destiny.
+            check if the origin has enough money
+                if yes rest the amount and add it to the destiny --> alter the [BALANCE ARRAY]
+            you will print something like this in a new array of objects to print later, remember that you had an array of pending operations
+                success ---> "transfer: origin: 1, destiny: 3, amount 12" : [0, 45, 57, 65]
+    if the costumer chose [withdraw]:
+        error ---> "withdraw: origin: 1, amount: 10" : [0, 45, 57, 65]
+    if the costumer chose [deposit]:   
+        success ---> "deposit: origin: 1, amount: 10" : [10, 45, 45, 65]
+*/
+
